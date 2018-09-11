@@ -1,4 +1,3 @@
-package com.loginmodule;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,7 +25,7 @@ public class Uploadservlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		String savepath="C:\\Users\\Scbadmin\\AkshayPractice\\Fileuploading\\src\\com\\input";
+		String savepath="Path of Save Directory";
 		
 		Collection<Part> parts=request.getParts();
 		for(Part part:parts){
